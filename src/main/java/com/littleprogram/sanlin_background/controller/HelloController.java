@@ -11,7 +11,7 @@ public class HelloController {
     @RequestMapping("/hello")
     private String index(){
         Jedis jedis=new Jedis("127.0.0.1",6379);
-        jedis.set("hello","lcj");
+        jedis.set("hello","lcjbb");
         String ss=jedis.get("hello");
         return ss;
     }
